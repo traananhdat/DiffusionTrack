@@ -47,7 +47,8 @@ class Exp(MyExp):
         )
 
         dataset = MOTDataset(
-            data_dir=os.path.join(get_yolox_datadir(), "MOT20"),
+            # data_dir=os.path.join(get_yolox_datadir(), "MOT20"),
+            data_dir="/kaggle/input/mot-20/MOT20",
             json_file=self.train_ann,
             name='train',
             img_size=self.input_size,
