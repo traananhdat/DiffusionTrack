@@ -76,7 +76,8 @@ if __name__ == '__main__':
                                          if int(anns[i][0]) - 1 >= image_range[0] and
                                          int(anns[i][0]) - 1 <= image_range[1]], np.float32) 
                     anns_out[:, 0] -= image_range[0]
-                    gt_out = os.path.join(seq_path, 'gt/gt_{}.txt'.format(split))
+                    # gt_out = os.path.join(seq_path, 'gt/gt_{}.txt'.format(split))
+                    gt_out = os.path.join(seq_path, 'gt/gt.txt')
                     fout = open(gt_out, 'w')
                     for o in anns_out:
                         fout.write('{:d},{:d},{:d},{:d},{:d},{:d},{:d},{:d},{:.6f}\n'.format(
