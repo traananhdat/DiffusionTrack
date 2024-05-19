@@ -134,7 +134,8 @@ def txt2img(visual_path="visual_val_gt"):
         img_dict = dict()
         
         if visual_path == "visual_val_gt":
-            txt_path = '/kaggle/input/gap-1-data/MOT17/train/' + show_video_name + '/gt/gt_val_half.txt'
+            # txt_path = '/kaggle/input/gap-1-data/MOT17/train/' + show_video_name + '/gt/gt_val_half.txt'
+            txt_path = '/kaggle/input/gap-1-data/MOT17/train/' + show_video_name + '/gt/gt.txt'
         elif visual_path == "visual_yolox_x":
             txt_path = 'YOLOX_outputs/yolox_mot_x_1088/track_results/'+ show_video_name + '.txt'
         elif visual_path == "visual_test_predict":
