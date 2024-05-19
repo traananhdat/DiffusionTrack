@@ -20,9 +20,11 @@ if __name__ == '__main__':
 
     for split in SPLITS:
         if split == "test":
-            data_path = os.path.join(DATA_PATH, 'test')
+            # data_path = os.path.join(DATA_PATH, 'test')
+            data_path = "/kaggle/input/gap-1-data/MOT17/test"
         else:
-            data_path = os.path.join(DATA_PATH, 'train')
+            # data_path = os.path.join(DATA_PATH, 'train')
+            data_path = "/kaggle/input/gap-1-data/MOT17/train"
         out_path = os.path.join(OUT_PATH, '{}.json'.format(split))
         out = {'images': [], 'annotations': [], 'videos': [],
                'categories': [{'id': 1, 'name': 'pedestrian'}]}
